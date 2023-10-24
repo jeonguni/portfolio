@@ -1,0 +1,24 @@
+@mixin icon {
+  display: inline-block;
+  position: relative;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.icon {
+  &-close {
+    @include icon;
+    width: 2.9rem;
+    height: 2.9rem;
+    background-image: url('../images/icon/btn_close.png');
+  }
+
+  &-plus {
+    @include icon;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-image: url('../images/icon/ico_plus.png');
+  }
+}
